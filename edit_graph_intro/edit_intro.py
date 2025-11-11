@@ -36,6 +36,6 @@ print('END NEW STATE')
 for event in react_graph.stream(None, thread, stream_mode="values"):
     print(event['messages'][-1].pretty_print())
 
-# Теперь мы вернулись к `assistant`, у которого есть наша `точка останова`. Мы снова можем передать `None` для продолжения.
+# Теперь мы вернулись к `assistant`, у которого есть наша `точка остановки`. Мы снова можем передать `None` для продолжения.
 for event in react_graph.stream(None, thread, stream_mode="values"):
     print(event['messages'][-1].pretty_print())
