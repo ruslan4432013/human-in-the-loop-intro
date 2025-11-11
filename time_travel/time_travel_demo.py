@@ -194,7 +194,7 @@ print("(включая новую ветку после time-travel)\n")
 # Показываем только темы для наглядности
 for i, state in enumerate(updated_states):
     topic = state.values.get('topic', 'N/A')
-    if topic == 'N/A':
-        print(state)
+    print(state.next)
+    print(state.values)
     joke_exists = 'joke' in state.values
     print(f"  {i}. Тема: {topic[:50]}... | Шутка: {'✓' if joke_exists else '✗'}")
